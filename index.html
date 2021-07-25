@@ -6,14 +6,33 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src='script.js' defer></script>
-	<title>Lab 04</title>
-	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+	<title>Lab 04 Todo list</title>
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<style>
+		.bg{
+      		background-repeat : no-repeat;
+      		background-position: top center;
+      		background-size:100%;
+		}
+	</style>
 </head>
 
-<body>
-	<h1>Minimal Todo List</h1>
-	<input  type='text'>
-	<button>+</button>
+<body background="img/bg1.jpg" class="bg">
+
+	<div class="mx-auto max-w-max mt-10 font-mono mb-10">
+		<h1 class="ml-2 mb-6 text-2xl font-black self-center">Minimal Todo List</h1>
+		<input  class="rounded-full ring-2 h-10 p-3 ring-purple-500" 
+		type='text'
+		placeholder="Add Todo" onkeyup="enterTodoList(event)">
+		<button class="rounded-full ring-2 w-10 h-10 text-sm ring-purple-500"
+		onclick="addTodoList()">add</button>
+	</div>
+
+	<div id="field" class="space-y-1">
+		<div id="todoList" class="flex flex-col z-0 space-y-1"></div>
+		<div id="finishList" class="space-y-1"></div>
+	</div>
+	
 </body>
 
 </html>
