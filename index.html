@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src='script.js' defer></script>
-	<title>Lab 04 Todo list</title>
+	<title>Lab 04</title>
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 	<style>
 		.bg{
@@ -23,9 +23,10 @@
 		<h1 class="ml-2 mb-6 text-2xl font-black self-center">Minimal Todo List</h1>
 		<input  class="rounded-full ring-2 h-10 p-3 ring-purple-500" 
 		type='text'
-		placeholder="Add Todo" onkeyup="enterTodoList(event)">
-		<button class="rounded-full ring-2 w-10 h-10 text-sm ring-purple-500"
-		onclick="addTodoList()">add</button>
+		placeholder="Add Todo" onkeyup="enterTodoList(event)"
+		>
+		<button class="rounded-full font-black ring-2 w-10 h-10 text-sm ring-purple-500 bg-white"
+		onclick="addTodoList()">Add</button>
 	</div>
 
 	<div id="field" class="space-y-1">

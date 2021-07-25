@@ -1,4 +1,3 @@
-/* Your code here */
 let todo = { todoList: [], finishList: [] }
 
 const enterTodoList = (ev) => {
@@ -54,20 +53,19 @@ const loadTodoList = (input, index) => {
     todoList.classList.add("flex")
     todoList.classList.add("space-x-2")
     todoList.classList.add("justify-between")
-    todoList.classList.add("h-auto")
     todoList.classList.add("px-4")
     todoList.classList.add("py-2")
-    todoList.classList.add("border-opacity-0")
+    
     todoList.classList.add("border-2")
     todoList.classList.add("rounded-lg")
     todoList.classList.add("border-red-500")
     todoList.classList.add("bg-white")
-    todoList.classList.add("z-0")
+    todoList.classList.add("z-0")   
     todoList.classList.add("shadow-md")
 
     title.classList.add("h-auto")
     title.classList.add("self-center")
-    title.classList.add("w-4/5")
+    
 
     p.classList.add("text-xl")
     p.classList.add("truncate")
